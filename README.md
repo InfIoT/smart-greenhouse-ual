@@ -72,6 +72,11 @@ sendRadio()
 
 ![Radio](img/radio.png) 
 
+<h3>Output and Real Assembly</h3>
+
+![Out](img/out.png)
+
+![Real](img/real.png)
 
 <h2>II.II) Internal Station </h2>
 In this part we will assemble the internal station that will be responsible for measuring the internal climate of the greenhouse.
