@@ -66,7 +66,7 @@ For the assembly we will need:
 | Agriculture Sensor Pro    | ![Agriculture](img/agr.jpeg) |
 | LoRa                      | ![LoRa](img/lo.jpg)          |
 | BME Sensor                | ![BME](img/bme.jpg)          |
-| Soil Moisture Sensor      | ![Soil](img/soil.PNG)        |
+| Soil Moisture Sensor      | ![Soil](img/soil.png)        |
 | Wifi                      | ![Wifi](img/wifi.png)        |
 
 
