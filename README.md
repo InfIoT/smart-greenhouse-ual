@@ -48,7 +48,7 @@ It will collect the following data:
 - Temperature
 - Pressure
 - Humidity
-- Humidity of floor
+- Soil Moisture
 
 <h3>Internal Station Assembly</h3>
 For the assembly we will need:
