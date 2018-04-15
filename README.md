@@ -59,7 +59,10 @@ For this purpose we will use the LoRa communication, so we need include this lib
 #include <WaspLoRaWAN.h>
 ````
 
-For this we only need use the example of communication with LoRa (P2P) include in the Waspmote IDE.
+For this we only need use the example of communication with LoRa (P2P) include in the Waspmote IDE. And initialize the LoRa socket.
+
+![Ini](img/sock.png) 
+
 We should only know that LoRa sends the messages in hexadecimal, so we must convert the values ​​of the sensors, with this code for example.
 
 ![Hex](img/hexa.png) 
