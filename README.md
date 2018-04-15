@@ -37,6 +37,19 @@ For the assembly we will need:
 | Luxe Sensor               | ![Luxe](img/luxe.jpg)        |
 
 <h3>Read Sensors from External Station</h3>
+In the external station we will use the smart cities board, so we must include this library.
+
+```
+#include <WaspSensorCities_PRO.h>
+````
+
+The first thing will be to initialize the sensors with their socket.
+
+![Init](img/init.png) 
+
+To read the values ​​of the sensors we will use the following code.
+
+![Read](img/read.png) 
 
 <h3>Send Data with LoRa</h3>
 
@@ -71,6 +84,8 @@ For the assembly we will need:
 
 
 <h3>Read Sensors from Internal Station</h3>
+
+
 
 <h3>Send Data with Wifi</h3>
 
