@@ -36,6 +36,8 @@ For the assembly we will need:
 | BME Sensor                | ![BME](img/bme.jpg)          |
 | Luxe Sensor               | ![Luxe](img/luxe.jpg)        |
 
+![Real](img/re.png)
+
 <h3>Read Sensors from External Station</h3>
 In the external station we will use the smart cities board, so we must include this library.
 
@@ -75,11 +77,9 @@ sendRadio()
 
 ![Radio](img/radio.png) 
 
-<h3>Output and Real Assembly</h3>
+<h3>Output</h3>
 
 ![Out](img/out.png)
-
-![Real](img/re.png)
 
 <h2>II.II) Internal Station </h2>
 In this part we will assemble the internal station that will be responsible for measuring the internal climate of the greenhouse.
