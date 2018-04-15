@@ -30,11 +30,11 @@ For the assembly we will need:
 
 | Component                 | Image                           |
 | ------------------------- | ------------------------------- |
-| Waspmote                  | ![Waspmote](images/was.png)     |
-| Smart Cities Pro          | ![SmartCitie](images/smart.jpg) |
-| LoRa                      | ![LoRa](images/lo.jpg)          |
-| BME Sensor                | ![BME](images/bme.jpg)          |
-| Luxe Sensor               | ![Luxe](images/luxe.jpg)        |
+| Waspmote                  | ![Waspmote](img/was.png)     |
+| Smart Cities Pro          | ![SmartCitie](img/smart.jpg) |
+| LoRa                      | ![LoRa](img/lo.jpg)          |
+| BME Sensor                | ![BME](img/bme.jpg)          |
+| Luxe Sensor               | ![Luxe](img/luxe.jpg)        |
 
 <h3>Read Sensors from External Station</h3>
 
@@ -62,12 +62,12 @@ For the assembly we will need:
 
 | Component                 | Image                           |
 | ------------------------- | ------------------------------- |
-| Waspmote                  | ![Waspmote](images/was.png)     |
-| Agriculture Sensor Pro    | ![Agriculture](images/agr.jpeg) |
-| LoRa                      | ![LoRa](images/lo.jpg)          |
-| BME Sensor                | ![BME](images/bme.jpg)          |
-| Soil Moisture Sensor      | ![Soil](images/soil.PNG)        |
-| Wifi                      | ![Wifi](images/wifi.png)        |
+| Waspmote                  | ![Waspmote](img/was.png)     |
+| Agriculture Sensor Pro    | ![Agriculture](img/agr.jpeg) |
+| LoRa                      | ![LoRa](img/lo.jpg)          |
+| BME Sensor                | ![BME](img/bme.jpg)          |
+| Soil Moisture Sensor      | ![Soil](img/soil.PNG)        |
+| Wifi                      | ![Wifi](img/wifi.png)        |
 
 
 <h3>Read Sensors from Internal Station</h3>
