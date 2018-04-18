@@ -67,7 +67,7 @@ For this we only need use the example of communication with LoRa (P2P) include i
 
 We should only know that LoRa sends the messages in hexadecimal, so we must convert the values ​​of the sensors, with this code for example.
 
-![Hex](img/hexa.png) 
+![Hex](img/hex.png) 
 
 When we have the hexadecimal messages we only need use this function.
 
