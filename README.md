@@ -81,6 +81,12 @@ sendRadio()
 
 ![Out](img/out.png)
 
+<h3>Problems with External Station</h3>
+
+- Be careful with connecting the sensors and the LoRa at the same time
+- Use the same frequency when making p2p communication
+- Use sensors compatible with smart cities
+
 <h2>II.II) Internal Station </h2>
 In this part we will assemble the internal station that will be responsible for measuring the internal climate of the greenhouse.
 
