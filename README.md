@@ -205,34 +205,33 @@ Once the Raspberry Pi has been configured as a Web Server, we need to create a n
 
 In this section, we will explain and show the code used to connect to our database and to insert data in it.
 
-In the file [insertar.php](server_src/smartgreenhouse/insertar.php), we are
+In the file [insertar.php](server_src/smartgreenhouse/insertar.php), we include [conexion.php](server_src/smartgreenhouse/conexion.php) to connect to the database. Then, we create the variables we need to receive data.
 
+![Recdata](server_images/code11.png)
 
+Depending on the received values, it will have an effect or another on the actuators. For example, if the received value of BME Temperature is greater than 20, the window of the greenhouse will be opened, but if it is less than or equal to 20, the window will be closed.
 
+![Cond](server_images/code22.png)
 
+Once all the variables have been initialized, we connect to the database and then insert these data into it.
 
+![InsertDatabase](server_images/code33.png)
 
+After the data have been inserted into the database, the actuators will perform an action depending on the value of these data. This action will be performed by running a Python program. For example, if the value of the variable "calefaccion" is 1 (this means that the corresponding actuator will be activated), the Python program [activa_calefaccion.py](server_src/smartgreenhouse/activa_calefaccion.py) will be executed to turn on the heating. In this case, this event will be simulated by turning on one of the LEDs of the assembly.
 
+![Action](server_images/code44.png)
 
+The following image shows a situation in which it is necessary to activate both, irrigation and heating (both LEDs turn on).
 
+![Lightson](server_images/sample2.png)
 
+If we access the database again, we can see that the data are stored successfully.
 
+![Databasesuccess](server_images/database_receiving_data.png)
 
+<h3>Dashboard</h3>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+asdfasfddf
 
 
 
