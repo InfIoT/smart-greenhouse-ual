@@ -113,8 +113,71 @@ For the assembly we will need:
 
 <h3>Read Sensors from Internal Station</h3>
 
-hello
+In the internal station we will use the agricuture 3.0 board, so we must include this library.
 
+```
+#include <WaspSensorAgr_v30.h>
+```
+The first thing we have to do is to initialize the watermark and pt1000 sensors
+
+```
+watermarkClass wmSensor1(SOCKET_1);
+pt1000Class pt1000Sensor;
+```
+To read the sensor we can use the following code.
+
+```
+Agriculture.ON();
+sensorTemp = pt1000Sensor.readPT1000();  
+sensorHum = wmSensor1.readWatermark();
+temp = Agriculture.getTemperature();
+humd  = Agriculture.getHumidity();
+pres = Agriculture.getPressure(); 
+```
+
+<h3>Receive Data from LoraWan</h3>
+We have used the same code as the libelium example.  
+
+Just use this code to transalte the data to text
+
+```
+USB.println(F("--> Packet received"));
+USB.print(F("packet: "));
+USB.println((char*) LoRaWAN._buffer);
+uint8_t bufferTranslated[100];
+uint16_t size;
+size = Utils.str2hex((char*) LoRaWAN._buffer, bufferTranslated,sizeof(bufferTranslated));
+USB.println(bufferTranslated,size);
+```
 <h3>Send Data with Wifi</h3>
+
+First we have to upload and execute the example called "WiFi PRO 01: Configure ESSID", just change the following lines with your router credentials.
+
+````
+char ESSID[] = "libelium_AP";
+char PASSW[] = "password";
+````
+When you have executed that code, the waspmote board makes a file storaged in the sd card, this file will be used to connect to the WIFI when we call the following function
+
+````
+uint8_t socket1 = SOCKET1;
+WIFI_PRO.ON(socket1);
+````
+
+Once we have reached this point, we used the same code as the libelium "WiFi PRO 15: HTTPS POST" example, just changing the following lines with your web server information
+
+````
+char type[] = "http";
+char host[] = "192.168.43.180";
+char port[] = "80";
+char url[] = "smartgreenhouse/insertar.php?";
+````
+
+And that lines to say what want to send and how to send(POST or GET)
+
+``
+char body[] = "varA=1&varB=2&varC=3&varD=4&varE=5";
+WIFI_PRO.post(body); 
+``
 
 <h2>II.III) Server-Actuator </h2>
