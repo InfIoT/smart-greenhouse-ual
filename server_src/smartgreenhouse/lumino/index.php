@@ -48,7 +48,7 @@
 		    or die('No se pudo conectar');
 		mysqli_select_db($link,'infraiot') or die('No se pudo seleccionar la base de datos');
 
-		// Realizar una consulta MySQL
+		// Make a MySQL query
 		$query = "SELECT TEMPEXT, HUMEXT, PRESEXT, LUMINOSIDAD  FROM datos ORDER BY id DESC LIMIT 1";
 		$result = mysqli_query($link,$query) or die('Consulta fallida');
 
@@ -117,7 +117,7 @@
 			</div>
 		</div><!--/.row-->
 		<?php 
-		// Realizar una consulta MySQL
+		// Make a MySQL query
 		$queryIn = "SELECT BMETEMP, BMEPRES, BMEHUM, HUMSUELO, TEMPSUELO FROM datos ORDER BY id DESC LIMIT 1";
 		$resultIn = mysqli_query($link,$queryIn) or die('Consulta fallida');
 
