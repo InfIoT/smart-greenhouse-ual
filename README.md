@@ -205,7 +205,7 @@ Once the Raspberry Pi has been configured as a Web Server, we need to create a n
 
 In this section, we will explain and show the code used to connect to our database and to insert data in it.
 
-In the file [insertar.php](server_src/smartgreenhouse/insertar.php), we
+In the file [insertar.php](server_src/smartgreenhouse/insertar.php), we are
 
 
 
