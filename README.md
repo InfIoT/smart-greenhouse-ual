@@ -193,15 +193,19 @@ And add the following line:
 
 	extension=mysql.so
 	
-We will save the file and then enter http://IPRASPBERRY/phpmyadmin on the browser. The user will be "root" and the password will be the one we have chosen before.
+We will save the file and then enter http://IP_RASPBERRY/phpmyadmin on the browser. The user will be "root" and the password will be the one we have chosen before.
 
 <h3>Create a new Database</h3>
 
-Once the Raspberry Pi has been configured as a Web Server, we need to create a new database which will store data received from the external and internal stations, so we log into phpMyAdmin and create a new database called "infraiot" which will have a table called "datos". The structure of this table is shown in the following figure, so we create a field for each type of information that the server receives from the stations, and also a field for each actuator, so that we can make decisions to turn on/off an actuator depending on the received data.
+Once the Raspberry Pi has been configured as a Web Server, we need to create a new database which will store data received from the external and internal stations, so we log into phpMyAdmin and create a new database called "infraiot" which will have a table called "datos". The structure of this table is shown in the following figure, so we create a field for each type of information that the server receives from the stations, and also a field for each actuator ("ventana", "riego" and "calefaccion"), so that we can make decisions to turn on/off an actuator depending on the received data.
 
 ![Database](server_images/database-fields.png)
 
-sdfdfhfgnhdg
+<h3>Connect to the Database and inserting data in it</h3>
+
+In this section, we will explain and show the code used to connect to our database and to insert data in it.
+
+In the file [insertar.php](server_src/smartgreenhouse/insertar.php), we
 
 
 
