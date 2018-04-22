@@ -118,3 +118,5 @@ For the assembly we will need:
 <h3>Send Data with Wifi</h3>
 
 <h2>II.III) Server-Actuator </h2>
+
+...
