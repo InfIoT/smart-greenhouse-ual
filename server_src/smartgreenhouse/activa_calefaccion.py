@@ -1,12 +1,11 @@
 #!usr/bin/env/ python
 
-#Importamos la libreria y le cambiamos el nombre a GPIO
+#Import the library and change the name to GPIO
 import RPi.GPIO as GPIO
-#Establecemos el sistema de numeracion que queramos, 
-#en este caso el sistema BCM
+#Establish the numbering system that we want, in this case the BCM system
 GPIO.setmode(GPIO.BCM)
-#Configuramos el pin GPIO 26 como una salida
+#Configure GPIO 26 pin as an output
 GPIO.setup(26, GPIO.OUT)
-#Encendemos el led
+#Turn on the LED
 GPIO.output(26, GPIO.HIGH)
 
