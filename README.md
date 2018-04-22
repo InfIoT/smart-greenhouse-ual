@@ -118,5 +118,17 @@ For the assembly we will need:
 <h3>Send Data with Wifi</h3>
 
 <h2>II.III) Server-Actuator </h2>
+This is the last part of this project, in which we use a server to store collected data and act on some actuators according to these.
 
-...
+It will store the following data:
+
+- BME Temperature
+- BME Pressure
+- BME Humidity
+- Soil Moisture
+- Soil Temperature
+- External Temperature
+- External Pressure
+- External Humidity
+- Luminosity
+
