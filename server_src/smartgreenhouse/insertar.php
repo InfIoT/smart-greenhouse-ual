@@ -1,7 +1,7 @@
 <?php
 include("conexion.php");
 
-// Recepción de datos
+// Data reception
 $BMETEMP=$_POST['BMETEMP'];
 $BMEPRES=$_POST['BMEPRES'];
 $BMEHUM=$_POST['BMEHUM'];
@@ -41,17 +41,17 @@ $calefaccion=0;
 }
 
 
-// Conexión a la Base de Datos
+// Connection to the Database
 $con=mysql_connect($host,$user,$pw)or die("problemas al conectar");
 mysql_select_db($db,$con)or die("problemas al conectar la bd");
 
 
-// Inserción a la Base de Datos
+// Insertion into the Database
 mysql_query("INSERT INTO datos(BMETEMP, BMEPRES, BMEHUM, HUMSUELO, TEMPSUELO, TEMPEXT, PRESEXT, HUMEXT, LUMINOSIDAD, ventana, riego, calefaccion, fechaHora) VALUES ('$BMETEMP','$BMEPRES','$BMEHUM','$HUMSUELO','$TEMPSUELO','$TEMPEXT','$PRESEXT','$HUMEXT',
 '$LUMINOSIDAD','$ventana','$riego','$calefaccion','$fechaHora')") or die("error");
 
 
-// Actuadores
+// Actuators
 if ($ventana==1) { 
    if(($BMETEMP > 20)and($BMETEMP < 29)){
 	$a- exec("sudo python /var/www/html/smartgreenhouse/abrirVentanaMedio.py");
