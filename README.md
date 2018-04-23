@@ -193,7 +193,7 @@ And add the following line:
 
 	extension=mysql.so
 	
-We will save the file and then enter http://IP_RASPBERRY/phpmyadmin on the browser. The user will be "root" and the password will be the one we have chosen before.
+We will save the file and then enter http://IP_RASPBERRY/phpmyadmin/ on the browser. The user will be "root" and the password will be the one we have chosen before.
 
 <h3>Create a new Database</h3>
 
