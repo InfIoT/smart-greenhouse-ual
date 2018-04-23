@@ -185,7 +185,7 @@ Once the installation has finished, we must restart the Raspberry Pi again. Now,
 
 	sudo apt-get install libapache2-mod-auth-mysql php5-mysql phpmyadmin
 
-During installation, it will ask us what type of server we have. We will mark "Apache" and continue. Then, it will ask us if we wantto configure a database, so we will say "YES" and ask us to enter the MySQL password twice. At the end, we will edit the following file:
+During installation, it will ask us what type of server we have. We will mark "Apache" and continue. Then, it will ask us if we want to configure a database, so we will say "YES" and ask us to enter the MySQL password twice. At the end, we will edit the following file:
 
 	sudo nano /etc/php5/apache2/php.ini
 
