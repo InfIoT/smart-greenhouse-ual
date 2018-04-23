@@ -235,97 +235,18 @@ If we access the database again, we can see that the data are stored successfull
 
 <h3>Dashboard</h3>
 
-asdfasfddf
+Finally, we have created a [dashboard](server_src/smartgreenhouse/lumino) to have a graphical representation of the data. This will connect to the database, and then make a "SELECT" of the data to display them.
 
+The following figure shows the data collected by the external station ([index.php](server_src/smartgreenhouse/lumino/index.php)).
 
+![Dash1](server_images/dashboard1.png)
 
+The next two figures show the data collected by the internal station over time.
 
+![Dash2](server_images/dashboard2.png)
 
+![Dash3](server_images/dashboard3.png)
 
+Finally, the following figure shows a comparison between outside/inside temperature, outside/inside humidity and outside/inside pressure. In addition, we have added 7 buttons to manually control each actuator. Each button will run the corresponding Python program that will act on the actuator. For example, if we press the "Desactivar riego" button, the LED which simulates irrigation turns off.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Dash4](server_images/dashboard4.png)
